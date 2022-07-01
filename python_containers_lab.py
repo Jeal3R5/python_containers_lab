@@ -8,7 +8,7 @@ students = ["Robert", "Logan", "Rachael", "Andrea", "Lulu", "Emi", "RahRah"]
 ## Exercise 2 ##
 foods = ('strawberry', 'cookie', 'water', 'coffee', 'salad', 'steak', 'crab')
 
-# for food in foods:
+#for food in foods:
 #     print(f"{food} is a good food.")
 
 
@@ -16,8 +16,8 @@ foods = ('strawberry', 'cookie', 'water', 'coffee', 'salad', 'steak', 'crab')
 ##use a for loop, print just the last two food stings from foods
 
 # for food in foods:
-#    print(foods[-2:])
-#    break
+#     print(foods[-2:])
+#     break
 
 
 
@@ -38,7 +38,7 @@ foods = ('strawberry', 'cookie', 'water', 'coffee', 'salad', 'steak', 'crab')
 ## Iterate over the key: value pairs in home_town and print a string for each item
 
 # for key, val in home_town.items():
-#    print(f"{key} = {val}")
+#     print(f"{key} = {val}")
 
 
 ## Exercise 6 ##
@@ -52,18 +52,53 @@ foods = ('strawberry', 'cookie', 'water', 'coffee', 'salad', 'steak', 'crab')
 
 # cohort = []
 
-# for index, name in enumerate(students):
+# for index, student in enumerate(cohort):
 #    cohort.append({
 #    'student': name,
 #    'fav_food': foods[index]
 #    })
 
-#    for each_thing in cohort:
-#        print(each_thing)
-#        break
-#    for person in cohort:
-#        print(person["student"], "really likes", person["fav_food"])
-#        break
+# #    for each_thing in cohort:
+# #        print(each_thing)
+# #        break
+# for person in cohort:
+#     print(person[student], "really likes", person[foods])
+#     break
+
+
+
+
+
+# cohort = []
+
+# for index, name, fav_food in enumerate(cohort):
+#     cohort.append({
+#         'student': name,
+#         'fav_food': foods[index]
+#     })
+
+#     for person in cohort:
+#         print(f"'student'[name]) "really likes" ('fav_food'[fav_food]")
+#         break
+
+
+# cohort = []
+
+# for name, food in (cohort):
+#     cohort.append({
+#         'student': name,
+#         'fav_food': food
+#     })
+
+#     for name, foods in cohort:
+#         print(f"student"[name] "really likes" ("fav_food"[foods])")
+
+
+
+
+
+
+
 
 
 ## Exercise 7
