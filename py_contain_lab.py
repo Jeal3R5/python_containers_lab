@@ -50,53 +50,26 @@ foods = ('strawberry', 'cookie', 'water', 'coffee', 'salad', 'steak', 'crab')
 # }
 
 
-# cohort = []
+cohort = []
 
-# for index, student in enumerate(cohort):
+# -----One way to do this -----
+# for index, student in enumerate(students):
 #    cohort.append({
-#    'student': name,
+#    'student': student,
 #    'fav_food': foods[index]
 #    })
+#for person in cohort:
+#   print(f"{person['student']} really likes {person['fav_food']}")
 
-# #    for each_thing in cohort:
-# #        print(each_thing)
-# #        break
-# for person in cohort:
-#     print(person[student], "really likes", person[foods])
-#     break
+# -----Another way to do this (Thank you Josh and Rich) -----
+for student, food in zip(students, foods):              #Here we are going to pass zip two variables and combine them into tuple pairs in cohort list
+  cohort.append({
+    "student": student,
+    "fav_food": food
+  })
 
-
-
-
-
-# cohort = []
-
-# for index, name, fav_food in enumerate(cohort):
-#     cohort.append({
-#         'student': name,
-#         'fav_food': foods[index]
-#     })
-
-#     for person in cohort:
-#         print(f"'student'[name]) "really likes" ('fav_food'[fav_food]")
-#         break
-
-
-# cohort = []
-
-# for name, food in (cohort):
-#     cohort.append({
-#         'student': name,
-#         'fav_food': food
-#     })
-
-#     for name, foods in cohort:
-#         print(f"student"[name] "really likes" ("fav_food"[foods])")
-
-
-
-
-
+for person in cohort:
+    print(f"{person['student']} really likes {person['fav_food']}")
 
 
 
